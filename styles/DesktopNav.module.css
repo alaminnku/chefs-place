@@ -1,0 +1,35 @@
+.DesktopNav {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .DesktopNav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .Logo {
+    cursor: pointer;
+  }
+
+  .DesktopNav ul {
+    display: flex;
+    align-items: center;
+  }
+
+  .DesktopNav ul li a {
+    padding: 0.5rem 1.5rem;
+    color: var(--grey);
+  }
+
+  .DesktopNav ul li a:hover {
+    color: var(--darkGrey);
+  }
+
+  .Social svg {
+    font-size: 1.3rem;
+    margin-left: 1.5rem;
+    cursor: pointer;
+  }
+}

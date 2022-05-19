@@ -1,0 +1,55 @@
+.Menu {
+  padding: 1rem;
+}
+
+.Titles {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.Titles p {
+  font-weight: 600;
+  color: var(--grey);
+  margin-left: 2rem;
+}
+
+.Active {
+  border-bottom: 2px solid var(--grey);
+}
+
+.Item {
+  background-color: white;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.14);
+}
+
+.Item img {
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.Content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.Content div {
+  width: 75%;
+}
+
+.Content div p:nth-child(1) {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.Content div p:nth-child(2) {
+  font-size: 0.9rem;
+  color: var(--grey);
+}
+
+.Content > p:nth-child(2) {
+  font-weight: 700;
+}

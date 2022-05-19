@@ -1,0 +1,24 @@
+.AboutUs {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.Content {
+  position: absolute;
+  align-self: center;
+}
+
+.Content p:nth-child(1),
+.Content h2 {
+  margin-bottom: 0.25rem;
+}
+
+.Content p:nth-child(3) {
+  color: var(--grey);
+  font-size: 0.9rem;
+}
+
+.CoverImage {
+  margin-top: 5rem;
+}

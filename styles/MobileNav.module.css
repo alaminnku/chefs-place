@@ -1,0 +1,22 @@
+.MobileNav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Logo {
+  cursor: pointer;
+  width: 50px;
+}
+
+.Icon svg {
+  font-size: 1.5rem;
+  color: var(--darkGrey);
+  cursor: pointer;
+}
+
+@media (min-width: 1024px) {
+  .MobileNav {
+    display: none;
+  }
+}
