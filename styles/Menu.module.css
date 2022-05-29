@@ -1,5 +1,6 @@
 .Menu {
   padding: 1rem;
+  padding-bottom: 0rem;
 }
 
 .Titles {
@@ -12,6 +13,7 @@
   font-weight: 600;
   color: var(--grey);
   margin-left: 2rem;
+  cursor: pointer;
 }
 
 .Active {

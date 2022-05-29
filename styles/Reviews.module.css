@@ -1,0 +1,102 @@
+.Reviews {
+  padding: 1rem;
+  padding-top: 0rem;
+}
+
+.Comment {
+  padding: 1rem 0rem;
+}
+
+.Comment p:nth-child(2) {
+  color: var(--grey);
+  margin-top: 0.5rem;
+}
+
+.Comment p:nth-child(3) {
+  margin: 0.5rem 0rem;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.Comment p:nth-child(3) span {
+  font-weight: 400;
+  color: var(--grey);
+}
+
+.Icons {
+  display: flex;
+  align-items: center;
+}
+
+.Icons svg {
+  font-size: 2rem;
+  color: var(--grey);
+  cursor: pointer;
+}
+
+.LeftArrow {
+  margin-right: 1rem;
+}
+
+.Icons svg.Disabled {
+  color: var(--borderColor);
+}
+
+.Product {
+  position: relative;
+}
+
+.Product img {
+  border-radius: 0.25rem;
+}
+
+.ProductDetails {
+  position: absolute;
+  bottom: -3.5rem;
+  left: 4rem;
+  padding: 1rem;
+  border-radius: 0.25rem;
+  background-color: var(--almostWhite);
+  max-width: 15rem;
+  box-shadow: 3px 5px 10px 0 rgba(0, 0, 0, 0.14);
+}
+
+.NamePrice {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.25rem;
+}
+
+.NamePrice p {
+  font-weight: 700;
+  font-size: 0.9rem;
+  margin-bottom: 0.25rem;
+}
+
+.Stars {
+  margin-bottom: 0.25rem;
+}
+
+.Stars svg {
+  font-size: 1.25rem;
+  color: var(--orange);
+}
+
+.Description {
+  color: var(--grey);
+  font-size: 0.8rem;
+}
+
+.ProductDetails button {
+  display: flex;
+  align-items: center;
+  border: none;
+  background: none;
+  font-weight: 700;
+  color: var(--fontColor);
+}
+
+.ProductDetails button svg {
+  margin-left: 0.5rem;
+}
