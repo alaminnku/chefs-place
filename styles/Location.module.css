@@ -1,0 +1,15 @@
+.Location {
+  margin-top: 3rem;
+  padding: 1rem;
+}
+
+.Location h2 {
+  margin-bottom: 1rem;
+}
+
+.Map {
+  border: none;
+  width: 100%;
+  height: 15rem;
+  filter: grayscale(100%);
+}

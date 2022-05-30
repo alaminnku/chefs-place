@@ -1,0 +1,38 @@
+.Footer {
+  padding: 1rem;
+  border-top: 2px solid var(--borderColor);
+}
+
+.Content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.Logo {
+  width: 50px;
+}
+
+.Schedule h4,
+.Social h4 {
+  margin-bottom: 0.5rem;
+}
+
+.Schedule p,
+.Social a {
+  font-size: 0.9rem;
+  color: var(--grey);
+  padding: 0.25rem;
+}
+
+.Social {
+  display: flex;
+  flex-direction: column;
+}
+
+.Copyright {
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--grey);
+}
