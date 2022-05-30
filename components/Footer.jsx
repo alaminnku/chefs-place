@@ -18,7 +18,7 @@ const Footer = () => {
         <div className={styles.Schedule}>
           <h4>Schedule</h4>
           <p>Mon-Fr:</p>
-          <p>9:00 am - 7:00 pm</p>
+          <p>9:00 am - 11:00 pm</p>
         </div>
 
         <div className={styles.Social}>

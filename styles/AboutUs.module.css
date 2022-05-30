@@ -22,3 +22,14 @@
 .CoverImage {
   margin-top: 5rem;
 }
+
+@media (min-width: 810px) {
+  .Content {
+    top: 1rem;
+    padding: 2rem;
+  }
+
+  .Content p:nth-child(3) {
+    font-size: 1rem;
+  }
+}

@@ -71,9 +71,12 @@
   bottom: 0;
   align-self: center;
   text-align: center;
-  font-size: 0.75rem;
-  color: var(--darkGrey);
   padding: 0.5rem;
+}
+
+.Copyright p {
+  font-size: 0.9rem;
+  color: var(--grey);
 }
 
 .Copyright p:first-child {

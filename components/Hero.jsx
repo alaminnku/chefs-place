@@ -6,13 +6,13 @@ import heroImage from "@public/hero.png";
 
 const Hero = () => {
   return (
-    <div className={styles.Hero}>
+    <section className={styles.Hero}>
       <div className={styles.Content}>
         <h1>
-          Best pizza, best <br /> value
+          Best food, best <br /> value
         </h1>
         <p>
-          the right slice at the <br /> right price
+          the right food at the <br /> right price
         </p>
       </div>
 
@@ -27,17 +27,17 @@ const Hero = () => {
 
         <div className={styles.Card}>
           <IoMapSharp />
-          <p>168/7a, Dorgah Road, Khulna</p>
+          <p>New market gate 2, Khulna</p>
           <p>Our location</p>
         </div>
 
         <div className={styles.Card}>
           <IoCall />
-          <p>+88 017-1234567</p>
+          <a href="tel:+88 017-1234567">+88 017-1234567</a>
           <p>Call us</p>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

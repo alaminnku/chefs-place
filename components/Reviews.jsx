@@ -25,9 +25,9 @@ const Reviews = () => {
   stars.splice(0, reviews[currentReview].stars, ...filledStars);
 
   return (
-    <div className={styles.Reviews}>
+    <section className={styles.Reviews}>
       <h2>Comments</h2>
-      <div key={reviews[currentReview].id}>
+      <div key={reviews[currentReview].id} className={styles.Review}>
         <div className={styles.Comment}>
           <FaQuoteLeft />
           <p>{reviews[currentReview].text}</p>
@@ -79,7 +79,7 @@ const Reviews = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

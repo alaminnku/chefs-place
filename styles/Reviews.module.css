@@ -100,3 +100,37 @@
 .ProductDetails button svg {
   margin-left: 0.5rem;
 }
+
+@media (min-width: 810px) {
+  .Reviews {
+    padding: 2rem;
+    padding-top: 0rem;
+  }
+
+  .Review {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .Comment {
+    width: 40%;
+  }
+
+  .Icons svg {
+    font-size: 2.5rem;
+  }
+
+  .Product img {
+    border-radius: 0.5rem;
+  }
+
+  .Product span {
+    box-shadow: 5px 8px 13px 0 rgba(0, 0, 0, 0.14);
+  }
+
+  .ProductDetails {
+    left: -6rem;
+    border-radius: 0.5rem;
+  }
+}

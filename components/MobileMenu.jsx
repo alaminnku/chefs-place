@@ -14,7 +14,7 @@ const MobileMenu = ({ isOpen, setIsOpen }) => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <div className={`${styles.MobileMenu} ${isOpen && styles.Open}`}>
+    <section className={`${styles.MobileMenu} ${isOpen && styles.Open}`}>
       <div className={styles.MobileMenuNav}>
         <div className={styles.Logo}>
           <Link href="/">
@@ -85,7 +85,7 @@ const MobileMenu = ({ isOpen, setIsOpen }) => {
         <p>&copy; Copyright {currentYear} by Chef's Place</p>
         <p>All Rights Reserved</p>
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -2,7 +2,7 @@ import styles from "@styles/Location.module.css";
 
 const Location = () => {
   return (
-    <div className={styles.Location}>
+    <section className={styles.Location}>
       <h2>We are here</h2>
       <iframe
         className={styles.Map}
@@ -10,7 +10,7 @@ const Location = () => {
         loading="lazy"
         referrerPolicy="no-referrer-when-downgrade"
       ></iframe>
-    </div>
+    </section>
   );
 };
 

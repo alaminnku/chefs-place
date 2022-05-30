@@ -36,3 +36,9 @@
   font-size: 0.9rem;
   color: var(--grey);
 }
+
+@media (min-width: 810px) {
+  .Footer {
+    padding: 2rem;
+  }
+}

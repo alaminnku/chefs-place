@@ -15,7 +15,7 @@ const Menu = () => {
   const { pizza, burger, drink } = active;
 
   return (
-    <div className={styles.Menu}>
+    <section className={styles.Menu}>
       <div className={styles.Titles}>
         <h2>Menu</h2>
         <p
@@ -44,48 +44,54 @@ const Menu = () => {
         </p>
       </div>
 
-      {pizza &&
-        pizzas.map((pizza, i) => (
-          <div className={styles.Item} key={i + 1}>
-            <Image src={pizza.image} width={400} height={400} />
-            <div className={styles.Content}>
-              <div>
-                <p>{pizza.name}</p>
-                <p>{pizza.description}</p>
+      <div className={styles.Items}>
+        {pizza &&
+          pizzas.map((pizza, i) => (
+            <div className={styles.Item} key={i + 1}>
+              <Image src={pizza.image} width={400} height={400} />
+              <div className={styles.Content}>
+                <div>
+                  <p>{pizza.name}</p>
+                  <p>{pizza.description}</p>
+                </div>
+                <p>{pizza.price}</p>
               </div>
-              <p>{pizza.price}</p>
             </div>
-          </div>
-        ))}
+          ))}
+      </div>
 
-      {burger &&
-        burgers.map((burger, i) => (
-          <div className={styles.Item} key={i + 1}>
-            <Image src={burger.image} width={400} height={400} />
-            <div className={styles.Content}>
-              <div>
-                <p>{burger.name}</p>
-                <p>{burger.description}</p>
+      <div className={styles.Items}>
+        {burger &&
+          burgers.map((burger, i) => (
+            <div className={styles.Item} key={i + 1}>
+              <Image src={burger.image} width={400} height={400} />
+              <div className={styles.Content}>
+                <div>
+                  <p>{burger.name}</p>
+                  <p>{burger.description}</p>
+                </div>
+                <p>{burger.price}</p>
               </div>
-              <p>{burger.price}</p>
             </div>
-          </div>
-        ))}
+          ))}
+      </div>
 
-      {drink &&
-        drinks.map((drink, i) => (
-          <div className={styles.Item} key={i + 1}>
-            <Image src={drink.image} width={400} height={400} />
-            <div className={styles.Content}>
-              <div>
-                <p>{drink.name}</p>
-                <p>{drink.description}</p>
+      <div className={styles.Items}>
+        {drink &&
+          drinks.map((drink, i) => (
+            <div className={styles.Item} key={i + 1}>
+              <Image src={drink.image} width={400} height={400} />
+              <div className={styles.Content}>
+                <div>
+                  <p>{drink.name}</p>
+                  <p>{drink.description}</p>
+                </div>
+                <p>{drink.price}</p>
               </div>
-              <p>{drink.price}</p>
             </div>
-          </div>
-        ))}
-    </div>
+          ))}
+      </div>
+    </section>
   );
 };
 

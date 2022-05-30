@@ -36,10 +36,10 @@ const ContactForm = () => {
   };
 
   return (
-    <div className={styles.Contact}>
+    <section className={styles.Contact}>
       <h2>Let's talk</h2>
 
-      <div>
+      <div className={styles.FormDetails}>
         <form>
           <div className={styles.Input}>
             <label>Enter your name:</label>
@@ -90,7 +90,7 @@ const ContactForm = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

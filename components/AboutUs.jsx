@@ -4,17 +4,17 @@ import styles from "@styles/AboutUs.module.css";
 
 const AboutUs = () => {
   return (
-    <div className={styles.AboutUs}>
+    <section className={styles.AboutUs}>
       <div className={styles.Content}>
         <p>About us</p>
-        <h2>Family pizza restaurant</h2>
-        <p>Best quality pizza for friends and family</p>
+        <h2>Fast food restaurant</h2>
+        <p>Best quality foods for friends and family</p>
       </div>
 
       <div className={styles.CoverImage}>
         <Image src={aboutUsImage} />
       </div>
-    </div>
+    </section>
   );
 };
 
