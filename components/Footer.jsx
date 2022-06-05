@@ -21,14 +21,34 @@ const Footer = () => {
           <p>9:00 am - 11:00 pm</p>
         </div>
 
+        <div className={styles.Company}>
+          <h4>Company</h4>
+          <Link href="/menu">
+            <a>Menu</a>
+          </Link>
+          <Link href="/about-us">
+            <a>About Us</a>
+          </Link>
+        </div>
+
+        <div className={styles.Contact}>
+          <h4>Contact</h4>
+          <Link href="/contact-us">
+            <a>Contact Us</a>
+          </Link>
+          <Link href="/reservation">
+            <a>Reservation</a>
+          </Link>
+        </div>
+
         <div className={styles.Social}>
           <h4>Social</h4>
-          <Link href="/">
-            <a>Facebook</a>
-          </Link>
-          <Link href="/">
-            <a>Instagram</a>
-          </Link>
+          <a href="https://www.facebook.com" target="_blank">
+            Facebook
+          </a>
+          <a href="https://www.instagram.com" target="_blank">
+            Instagram
+          </a>
         </div>
       </div>
       <p className={styles.Copyright}>&copy; Copyright 2022 by Chef's Place</p>

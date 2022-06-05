@@ -47,7 +47,9 @@
 }
 
 .Details h2 {
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--borderColor);
 }
 
 .Details h4 {
@@ -73,7 +75,7 @@
   flex-direction: column;
 }
 
-@media (min-width: 810px) {
+@media (min-width: 768px) {
   .Contact {
     padding: 2rem;
     padding-top: 0rem;
@@ -89,14 +91,23 @@
   }
 
   .Input input {
-    padding: 1rem 0.5rem;
+    padding: 0.5rem;
   }
 
   .Details {
     width: 40%;
   }
+}
 
-  .Details h2 {
-    border-bottom: 2px solid var(--borderColor);
+@media (min-width: 810px) {
+  .Input input {
+    padding: 1rem 0.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .Contact {
+    padding: 4rem;
+    padding-top: 0rem;
   }
 }

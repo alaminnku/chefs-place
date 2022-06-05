@@ -13,6 +13,8 @@ import styles from "@styles/MobileMenu.module.css";
 const MobileMenu = ({ isOpen, setIsOpen }) => {
   const currentYear = new Date().getFullYear();
 
+  const handleCloseMenu = () => setIsOpen(false);
+
   return (
     <section className={`${styles.MobileMenu} ${isOpen && styles.Open}`}>
       <div className={styles.MobileMenuNav}>
@@ -23,6 +25,7 @@ const MobileMenu = ({ isOpen, setIsOpen }) => {
             </a>
           </Link>
         </div>
+
         <div className={styles.Icon} onClick={() => setIsOpen(!isOpen)}>
           <IoCloseSharp />
         </div>
@@ -30,7 +33,7 @@ const MobileMenu = ({ isOpen, setIsOpen }) => {
 
       <div className={styles.MobileMenuContent}>
         <ul>
-          <li>
+          <li onClick={handleCloseMenu}>
             <Link href="/reservation">
               <a>
                 <MdCalendarToday />
@@ -39,7 +42,7 @@ const MobileMenu = ({ isOpen, setIsOpen }) => {
             </Link>
           </li>
 
-          <li>
+          <li onClick={handleCloseMenu}>
             <Link href="/menu">
               <a>
                 <MdMenuBook />
@@ -48,7 +51,7 @@ const MobileMenu = ({ isOpen, setIsOpen }) => {
             </Link>
           </li>
 
-          <li>
+          <li onClick={handleCloseMenu}>
             <Link href="/about-us">
               <a>
                 <MdGroups />
@@ -56,7 +59,8 @@ const MobileMenu = ({ isOpen, setIsOpen }) => {
               </a>
             </Link>
           </li>
-          <li>
+
+          <li onClick={handleCloseMenu}>
             <Link href="/contact-us">
               <a>
                 <MdContactPhone />
@@ -65,15 +69,15 @@ const MobileMenu = ({ isOpen, setIsOpen }) => {
             </Link>
           </li>
 
-          <li>
-            <a href="www.facebook.com">
+          <li onClick={handleCloseMenu}>
+            <a href="https://www.facebook.com" target="_blank">
               <BsFacebook />
               Facebook
             </a>
           </li>
 
-          <li>
-            <a href="www.instagram.com">
+          <li onClick={handleCloseMenu}>
+            <a href="https://www.instagram.com" target="_blank">
               <BsInstagram />
               Instagram
             </a>

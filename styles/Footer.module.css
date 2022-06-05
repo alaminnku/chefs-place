@@ -1,34 +1,41 @@
 .Footer {
   padding: 1rem;
-  border-top: 2px solid var(--borderColor);
+  border-top: 1px solid var(--borderColor);
 }
 
 .Content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  text-align: center;
   margin-bottom: 1.5rem;
 }
 
 .Logo {
   width: 50px;
+  margin-bottom: 1rem;
 }
 
-.Schedule h4,
-.Social h4 {
-  margin-bottom: 0.5rem;
-}
-
-.Schedule p,
-.Social a {
-  font-size: 0.9rem;
-  color: var(--grey);
-  padding: 0.25rem;
-}
-
+.Schedule,
+.Company,
+.Contact,
 .Social {
   display: flex;
   flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.Schedule h4,
+.Social h4,
+.Company h4,
+.Contact h4 {
+  margin-bottom: 0.25rem;
+}
+
+.Schedule p,
+.Social a,
+.Company a,
+.Contact a {
+  font-size: 0.9rem;
+  color: var(--grey);
+  padding: 0.25rem;
 }
 
 .Copyright {
@@ -37,8 +44,14 @@
   color: var(--grey);
 }
 
-@media (min-width: 810px) {
+@media (min-width: 768px) {
   .Footer {
-    padding: 2rem;
+    padding: 2rem 1rem;
+  }
+
+  .Content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 }

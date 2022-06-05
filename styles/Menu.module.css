@@ -56,11 +56,23 @@
   font-weight: 700;
 }
 
-@media (min-width: 810px) {
+@media (min-width: 768px) {
   .Menu {
     padding: 2rem;
   }
 
+  .Titles {
+    margin-bottom: 1.5rem;
+  }
+
+  .Items {
+    display: grid;
+    grid-template-columns: 31.8% 31.8% 31.8%;
+    grid-gap: 1rem;
+  }
+}
+
+@media (min-width: 810px) {
   .Titles {
     margin-bottom: 2rem;
   }
@@ -69,5 +81,11 @@
     display: grid;
     grid-template-columns: 31.1% 31.1% 31.1%;
     grid-gap: 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .Menu {
+    padding: 2rem 4rem;
   }
 }

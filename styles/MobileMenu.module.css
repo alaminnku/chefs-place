@@ -83,6 +83,20 @@
   margin-bottom: 0.25rem;
 }
 
+@media (min-width: 768px) {
+  .MobileMenuContent {
+    padding: 2rem;
+  }
+
+  .MobileMenuContent ul {
+    grid-gap: 1rem;
+  }
+
+  .MobileMenuContent ul li {
+    height: 8rem;
+  }
+}
+
 @media (min-width: 1024px) {
   .MobileMenu {
     display: none;

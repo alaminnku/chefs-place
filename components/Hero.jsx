@@ -12,7 +12,7 @@ const Hero = () => {
           Best food, best <br /> value
         </h1>
         <p>
-          the right food at the <br /> right price
+          The right food at the <br /> right price
         </p>
       </div>
 

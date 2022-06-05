@@ -1,0 +1,131 @@
+.ReservationPage {
+  padding: 1rem;
+}
+
+.ReservationPage h2,
+.Guests,
+.Date,
+.Time,
+.Name,
+.Email,
+.Phone {
+  margin-bottom: 1rem;
+}
+
+.Guests,
+.Date,
+.Time,
+.Name,
+.Email,
+.Phone {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  box-shadow: 0px 1px 10px 0 rgba(0, 0, 0, 0.14);
+  border-radius: 0.5rem;
+}
+
+.Guests input,
+.Date input,
+.Time input,
+.Name input,
+.Email input,
+.Phone input {
+  border: 1px solid var(--borderColor);
+  border-radius: 5rem;
+  padding: 0.5rem 0.75rem;
+  width: 50%;
+}
+
+.ReservationPage button {
+  width: 100%;
+  border: none;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .ReservationPage {
+    padding: 1rem 2rem;
+  }
+
+  .ReservationPage h2,
+  .Guests,
+  .Date,
+  .Time,
+  .Name,
+  .Email,
+  .Phone {
+    margin-bottom: 1.5rem;
+  }
+
+  .ReservationPage form {
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .Guests,
+  .Date,
+  .Time,
+  .Name,
+  .Email,
+  .Phone {
+    padding: 1.25rem 1rem;
+  }
+
+  .Guests h4,
+  .Date h4,
+  .Time h4,
+  .Name h4,
+  .Email h4,
+  .Phone h4 {
+    font-size: 1.1rem;
+  }
+
+  .ReservationPage button {
+    padding: 1.25rem;
+    font-size: 1.1rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .ReservationPage {
+    padding: 2rem 4rem;
+  }
+
+  .ReservationPage h2,
+  .Guests,
+  .Date,
+  .Time,
+  .Name,
+  .Email,
+  .Phone {
+    margin-bottom: 2rem;
+  }
+
+  .ReservationPage form {
+    width: 60%;
+  }
+
+  .Guests,
+  .Date,
+  .Time,
+  .Name,
+  .Email,
+  .Phone {
+    padding: 1.35rem;
+  }
+
+  .Guests input,
+  .Date input,
+  .Time input,
+  .Name input,
+  .Email input,
+  .Phone input {
+    padding: 0.75rem 1rem;
+  }
+}

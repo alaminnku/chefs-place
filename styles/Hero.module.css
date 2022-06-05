@@ -9,6 +9,10 @@
   margin-top: 0.5rem;
 }
 
+.Content h1 {
+  margin-bottom: 0.25rem;
+}
+
 .Content p {
   font-size: 0.9rem;
   color: var(--grey);
@@ -53,10 +57,29 @@
   font-size: 0.8rem;
 }
 
+@media (min-width: 768px) {
+  .Content {
+    top: 1.25rem;
+    padding: 2rem;
+  }
+
+  .Content h1 {
+    font-size: 3rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .Content p {
+    font-size: 1.5rem;
+  }
+
+  .Card {
+    width: 50%;
+  }
+}
+
 @media (min-width: 810px) {
   .Content {
     top: 4.5rem;
-    padding: 2rem;
   }
 
   .Content h1 {
@@ -86,5 +109,11 @@
 
   .Card p {
     font-size: 1rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .Content {
+    padding: 2rem 4rem;
   }
 }

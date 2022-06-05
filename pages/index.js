@@ -7,17 +7,17 @@ import Location from "@components/Location";
 import Contact from "@components/Contact";
 import Footer from "@components/Footer";
 
-export default function Home() {
+const HomePage = () => {
   return (
     <main>
-      <Header />
       <Hero />
       <AboutUs />
       <Menu />
       <Reviews />
       <Location />
       <Contact />
-      <Footer />
     </main>
   );
-}
+};
+
+export default HomePage;
