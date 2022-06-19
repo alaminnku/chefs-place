@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { useEffect } from "react";
 import { BsFacebook, BsInstagram } from "react-icons/bs";
 import {
   MdMenuBook,
@@ -8,15 +9,29 @@ import {
   MdCalendarToday,
 } from "react-icons/md";
 import { IoCloseSharp } from "react-icons/io5";
+import { disableBodyScroll, enableBodyScroll } from "body-scroll-lock";
 import styles from "@styles/MobileMenu.module.css";
 
 const MobileMenu = ({ isOpen, setIsOpen }) => {
+  useEffect(() => {
+    // Get mobile menu
+    const mobileMenu = document.querySelector("#MobileMenu");
+
+    // Disable body scroll when menu is open
+    isOpen ? disableBodyScroll(mobileMenu) : enableBodyScroll(mobileMenu);
+  });
+
+  // Current year
   const currentYear = new Date().getFullYear();
 
+  // Handle menu close
   const handleCloseMenu = () => setIsOpen(false);
 
   return (
-    <section className={`${styles.MobileMenu} ${isOpen && styles.Open}`}>
+    <section
+      className={`${styles.MobileMenu} ${isOpen && styles.Open}`}
+      id="MobileMenu"
+    >
       <div className={styles.MobileMenuNav} onClick={() => setIsOpen(!isOpen)}>
         <div className={styles.Logo}>
           <Link href="/">

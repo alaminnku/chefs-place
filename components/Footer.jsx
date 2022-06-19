@@ -43,10 +43,10 @@ const Footer = () => {
 
         <div className={styles.Social}>
           <h4>Social</h4>
-          <a href="https://www.facebook.com" target="_blank">
+          <a href="https://www.facebook.com/octibsoft" target="_blank">
             Facebook
           </a>
-          <a href="https://www.instagram.com" target="_blank">
+          <a href="https://www.instagram.com/octibsoft/" target="_blank">
             Instagram
           </a>
         </div>
