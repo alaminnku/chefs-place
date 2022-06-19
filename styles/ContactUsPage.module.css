@@ -1,23 +1,19 @@
-.ReservationPage {
+.ContactUsPage {
   padding: 1rem;
 }
 
-.ReservationPage h2,
-.Guests,
-.Date,
-.Time,
+.ContactUsPage h2,
 .Name,
 .Email,
-.Phone {
+.Phone,
+.Message {
   margin-bottom: 1rem;
 }
 
-.Guests,
-.Date,
-.Time,
 .Name,
 .Email,
-.Phone {
+.Phone,
+.Message {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -26,19 +22,24 @@
   border-radius: 0.5rem;
 }
 
-.Guests input,
-.Date input,
-.Time input,
 .Name input,
 .Email input,
-.Phone input {
+.Phone input,
+.Message textarea {
   border: 1px solid var(--borderColor);
   border-radius: 5rem;
   padding: 0.5rem 0.75rem;
   width: 50%;
 }
 
-.ReservationPage button {
+.Message textarea {
+  border-radius: 0.5rem;
+  height: 5rem;
+  resize: none;
+  font-family: "Roboto", sans-serif;
+}
+
+.ContactUsPage button {
   width: 100%;
   border: none;
   padding: 1rem;
@@ -48,84 +49,84 @@
   cursor: pointer;
 }
 
+.Active {
+  background-color: var(--orange);
+  color: var(--almostWhite);
+}
+
 @media (min-width: 768px) {
-  .ReservationPage {
+  .ContactUsPage {
     padding: 1rem 2rem;
   }
 
-  .ReservationPage h2,
-  .Guests,
-  .Date,
-  .Time,
+  .ContactUsPage h2,
   .Name,
   .Email,
-  .Phone {
+  .Phone,
+  .Message {
     margin-bottom: 1.5rem;
   }
 
-  .ReservationPage form {
+  .ContactUsPage form {
     width: 70%;
     margin: 0 auto;
   }
 
-  .Guests,
-  .Date,
-  .Time,
   .Name,
   .Email,
-  .Phone {
+  .Phone,
+  .Message {
     padding: 1.25rem 1rem;
   }
 
-  .Guests h4,
-  .Date h4,
-  .Time h4,
+  .Message textarea {
+    height: 7rem;
+  }
+
   .Name h4,
   .Email h4,
   .Phone h4 {
     font-size: 1.1rem;
   }
 
-  .ReservationPage button {
+  .ContactUsPage button {
     padding: 1.25rem;
     font-size: 1.1rem;
   }
 }
 
 @media (min-width: 1024px) {
-  .ReservationPage {
+  .ContactUsPage {
     padding: 2rem 4rem;
   }
 
-  .ReservationPage h2,
-  .Guests,
-  .Date,
-  .Time,
+  .ContactUsPage h2,
   .Name,
   .Email,
-  .Phone {
+  .Phone,
+  .Message {
     margin-bottom: 2rem;
   }
 
-  .ReservationPage form {
+  .ContactUsPage form {
     width: 60%;
   }
 
-  .Guests,
-  .Date,
-  .Time,
   .Name,
   .Email,
-  .Phone {
+  .Phone,
+  .Message {
     padding: 1.35rem;
   }
 
-  .Guests input,
-  .Date input,
-  .Time input,
+  .Message textarea {
+    height: 8rem;
+  }
+
   .Name input,
   .Email input,
-  .Phone input {
+  .Phone input,
+  .Message textarea {
     padding: 0.75rem 1rem;
   }
 }

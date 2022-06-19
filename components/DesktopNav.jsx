@@ -38,8 +38,13 @@ const DesktopNav = () => {
       </ul>
 
       <div className={styles.Social}>
-        <BsFacebook />
-        <BsInstagram />
+        <a href="https://www.facebook.com/octibsoft" target="_blank">
+          <BsFacebook />
+        </a>
+
+        <a href="https://www.instagram.com/octibsoft/" target="_blank">
+          <BsInstagram />
+        </a>
       </div>
     </nav>
   );

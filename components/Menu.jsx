@@ -1,11 +1,9 @@
 import Image from "next/image";
 import { useState } from "react";
-import pizzas from "@data/pizzas";
-import burgers from "@data/burgers";
-import drinks from "@data/drinks";
+
 import styles from "@styles/Menu.module.css";
 
-const Menu = () => {
+const Menu = ({ pizzas, burgers, drinks }) => {
   const [active, setActive] = useState({
     pizza: true,
     burger: false,

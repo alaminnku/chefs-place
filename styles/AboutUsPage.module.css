@@ -1,0 +1,42 @@
+.AboutUsPage {
+  text-align: center;
+  padding: 1rem;
+}
+
+.Title h2 {
+  margin-bottom: 0.25rem;
+}
+
+.Title p {
+  color: var(--grey);
+  font-size: 0.9rem;
+}
+
+.Content p {
+  text-align: left;
+}
+
+.Content p {
+  margin-bottom: 1rem;
+}
+
+.Content p:last-child {
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+  .AboutUsPage {
+    padding: 1rem 2rem;
+  }
+
+  .Content {
+    width: 75%;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 1024px) {
+  .AboutUsPage {
+    padding: 2rem 4rem;
+  }
+}

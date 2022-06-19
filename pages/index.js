@@ -1,18 +1,17 @@
 import AboutUs from "@components/AboutUs";
-import Header from "@components/Header";
 import Hero from "@components/Hero";
 import Menu from "@components/Menu";
 import Reviews from "@components/Reviews";
 import Location from "@components/Location";
 import Contact from "@components/Contact";
-import Footer from "@components/Footer";
+import { pizzas, burgers, drinks } from "@data/menu";
 
 const HomePage = () => {
   return (
     <main>
       <Hero />
       <AboutUs />
-      <Menu />
+      <Menu pizzas={pizzas} burgers={burgers} drinks={drinks} />
       <Reviews />
       <Location />
       <Contact />

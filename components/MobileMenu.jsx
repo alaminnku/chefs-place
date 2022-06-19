@@ -17,7 +17,7 @@ const MobileMenu = ({ isOpen, setIsOpen }) => {
 
   return (
     <section className={`${styles.MobileMenu} ${isOpen && styles.Open}`}>
-      <div className={styles.MobileMenuNav}>
+      <div className={styles.MobileMenuNav} onClick={() => setIsOpen(!isOpen)}>
         <div className={styles.Logo}>
           <Link href="/">
             <a>
@@ -70,14 +70,14 @@ const MobileMenu = ({ isOpen, setIsOpen }) => {
           </li>
 
           <li onClick={handleCloseMenu}>
-            <a href="https://www.facebook.com" target="_blank">
+            <a href="https://www.facebook.com/octibsoft" target="_blank">
               <BsFacebook />
               Facebook
             </a>
           </li>
 
           <li onClick={handleCloseMenu}>
-            <a href="https://www.instagram.com" target="_blank">
+            <a href="https://www.instagram.com/octibsoft/" target="_blank">
               <BsInstagram />
               Instagram
             </a>

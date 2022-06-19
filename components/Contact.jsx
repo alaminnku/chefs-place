@@ -9,6 +9,13 @@ const ContactForm = () => {
     text: "",
   });
 
+  // Destructuring formData
+  const { name, phone, text } = formData;
+
+  // Check if any input is empty
+  const isEmpty = Object.values(formData).some((value) => value === "");
+
+  // Handle input change
   const handleChange = (e) => {
     setFormData({
       ...formData,
@@ -16,16 +23,11 @@ const ContactForm = () => {
     });
   };
 
-  const hasEmpty = Object.values(formData).some((value) => value === "");
-
+  // Handle form submit
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (hasEmpty) {
-      alert("Please fill all the fields!");
-      return;
-    }
 
-    alert("Your message has been sent!");
+    console.log(formData);
 
     setFormData({
       ...formData,
@@ -45,9 +47,9 @@ const ContactForm = () => {
             <label>Enter your name:</label>
             <input
               type="text"
-              placeholder="Name"
               name="name"
-              value={formData.name}
+              value={name}
+              placeholder="Enter your name"
               onChange={handleChange}
             />
           </div>
@@ -55,9 +57,9 @@ const ContactForm = () => {
             <label>Enter phone number:</label>
             <input
               type="number"
-              placeholder="Phone"
               name="phone"
-              value={formData.phone}
+              value={phone}
+              placeholder="Enter your phone number"
               onChange={handleChange}
             />
           </div>
@@ -65,13 +67,16 @@ const ContactForm = () => {
             <label>Enter message:</label>
             <textarea
               type="text"
-              placeholder="Text"
               name="text"
-              value={formData.text}
+              value={text}
+              placeholder="Enter your message"
               onChange={handleChange}
             />
           </div>
-          <SiMinutemailer className={styles.Submit} onClick={handleSubmit} />
+          <SiMinutemailer
+            className={`${styles.Submit} ${!isEmpty && styles.Active}`}
+            onClick={handleSubmit}
+          />
         </form>
 
         <div className={styles.Details}>
