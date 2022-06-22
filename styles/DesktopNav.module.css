@@ -18,12 +18,16 @@
     align-items: center;
   }
 
-  .DesktopNav ul li a {
+  .NavLink {
     padding: 0.5rem 1.5rem;
     color: var(--grey);
   }
 
-  .DesktopNav ul li a:hover {
+  .NavLink.Active {
+    color: var(--orange);
+  }
+
+  .NavLink:hover {
     color: var(--darkGrey);
   }
 

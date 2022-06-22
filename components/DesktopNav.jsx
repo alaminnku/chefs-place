@@ -1,9 +1,14 @@
 import Image from "next/image";
 import { BsFacebook, BsInstagram } from "react-icons/bs";
 import Link from "next/link";
+import { useRouter } from "next/router";
 import styles from "@styles/DesktopNav.module.css";
 
 const DesktopNav = () => {
+  const router = useRouter();
+  const pathname = router.pathname;
+  console.log(pathname);
+
   return (
     <nav className={styles.DesktopNav}>
       <div className={styles.Logo}>
@@ -16,23 +21,47 @@ const DesktopNav = () => {
       <ul>
         <li>
           <Link href="/reservation">
-            <a>Reservation</a>
+            <a
+              className={`${styles.NavLink} ${
+                pathname === "/reservation" && styles.Active
+              }`}
+            >
+              Reservation
+            </a>
           </Link>
         </li>
         <li>
           <Link href="/menu">
-            <a>Menu</a>
+            <a
+              className={`${styles.NavLink} ${
+                pathname === "/menu" && styles.Active
+              }`}
+            >
+              Menu
+            </a>
           </Link>
         </li>
         <li>
           <Link href="/about-us">
-            <a>About us</a>
+            <a
+              className={`${styles.NavLink} ${
+                pathname === "/about-us" && styles.Active
+              }`}
+            >
+              About us
+            </a>
           </Link>
         </li>
 
         <li>
           <Link href="/contact-us">
-            <a>Contact us</a>
+            <a
+              className={`${styles.NavLink} ${
+                pathname === "/contact-us" && styles.Active
+              }`}
+            >
+              Contact us
+            </a>
           </Link>
         </li>
       </ul>
