@@ -84,8 +84,8 @@ const ContactForm = () => {
           <div className={styles.Phones}>
             <h4>Phones:</h4>
             <div>
-              <a href="tel:+88 01701 022532">+88 01701 022532</a>
-              <a href="tel:+88 01723 546793">+88 01723 546793</a>
+              <a href="tel:+88 01712 345678">+88 01712 345678</a>
+              <a href="tel:+88 01812 345678">+88 01812 345678</a>
             </div>
           </div>
 

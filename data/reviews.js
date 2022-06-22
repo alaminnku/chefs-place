@@ -7,7 +7,7 @@ const reviews = [
     itemName: "Meat Pizza",
     itemPrice: "$12.00",
     stars: 4,
-    description: "Topped with tomatoes, mozzarella, and oregano",
+    description: "Topped with pepperoni, sausage, and bacon",
   },
   {
     id: 2,
@@ -17,7 +17,7 @@ const reviews = [
     itemName: "Pink Lemonade",
     itemPrice: "$7.00",
     stars: 5,
-    description: "Topped with tomatoes, mozzarella, and oregano",
+    description: "Strawberries, raspberries, sugar, lemon and club soda",
   },
 ];
 
